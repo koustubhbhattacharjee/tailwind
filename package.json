@@ -1,0 +1,23 @@
+{
+  "name": "TailWind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tailwindcss -i ./src/styles.css -o ./build/css/styles.css --watch",
+    "dev": "nodemon --ignore feedback.json server.js"
+  },
+  "keywords": [],
+  "author": "koustubh",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.18",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "autoprefixer": "^10.4.14",
+    "node-fetch": "^3.3.2"
+  }
+}

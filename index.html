@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./build/css/styles.css">
+  <title>Tailwind Flexbox Containers</title>
+  <link rel="stylesheet" href="https://use.typekit.net/gfh4xtq.css">
+  <style>
+    :root{
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <nav class="flex justify-center m-5">
+    <ul class="bg-black opacity-50 font-sans text-xl text-center flex justify-center max-h-15 flex-wrap shadow-md rounded-md p-2">
+      <li class="flex flex-col justify-center min-w-20 min-h-10 p-0 gap-10 bg-transparent">
+        <form class="flex justify-center" id="mainForm">
+          <input type="text" id="mainInput" value="new york" class="py-1 rounded-md shadow-md bg-white text-black placeholder-gray-500" placeholder="  search city">
+          <button id="mainButton" type="submit" class="px-4 py-2 mx-2 bg-white text-black rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+          </button>
+        </form>
+      </li>
+     
+      <li id="cityReason" class="flex flex-wrap flex-col justify-center min-w-20 min-h-10 p-2 bg-transparent text-white hover:text-red-500">
+        <p class="hover:text-2xl transition-all duration-1000 ease-in-out">
+          why delhi
+        </p>
+        <!-- <div  class="bg-gray-200 w-0 h-0 hover:w-20 hover:h-20 transition-all duration-200 ease-in-out flex flex-col justify-start">
+          <div class="border-2 bg-gray-500">
+            Just 
+          </div>
+          <div class="border-2 bg-gray-500">
+            coz 
+          </div>
+          <div class="border-2 bg-gray-500">
+            motherfucking 
+          </div>
+          <div class="border-2 bg-gray-500">
+            idiot
+          </div>
+
+        </div> -->
+      </li>
+      <li class="min-w-20 min-h-10 p-2 bg-transparent text-white hover:text-red-500 ">
+        <p class="hover:text-2xl transition-all duration-1000 ease-in-out">
+          food
+        </p>
+      </li>
+      <li class="min-w-20 min-h-10 p-2 bg-transparent text-white hover:text-red-500">
+        <p class="hover:text-2xl transition-all duration-1000 ease-in-out">
+          locations
+        </p>
+      </li>
+      <li class="min-w-20 min-h-10 p-2 bg-transparent text-white hover:text-red-500">
+        <p class="hover:text-2xl transition-all duration-1000 ease-in-out">
+          travel packages
+        </p>
+      </li>
+
+      
+    </ul>
+  </nav>
+
+  <div class="w-full h-full rounded-3xl bg-transparent">
+    <img class="p-0 m-0 bg-z-negative object-cover " src="#" alt="something"/>
+  </div>
+
+  
+  <script src="./api.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
